@@ -50,4 +50,4 @@ names(Combined_Data_Set)<- gsub("\\()", "", names(Combined_Data_Set))
 #   with the average of each variable for each activity and each subject.
 
 Independent_Tidy_Data_Set <- Combined_Data_Set %>% group_by(Subjects, Activity) %>% summarize_all(funs(mean))
-write.table(Independent_Tidy_Data_Set, "./Project/Question_5_Answer.txt", row.names = FALSE)
+write.table(Independent_Tidy_Data_Set, "C:\\Users\\vsn\\Desktop\\data\\tidy.txt", row.names = FALSE)
