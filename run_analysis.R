@@ -3,8 +3,6 @@ library(dplyr)
 fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileURL, destfile = "C:\\Users\\vsn\\Desktop\\data\\getdata%2Fprojectfiles%2FUCI HAR Dataset.zip")
 unzip('C:\\Users\\vsn\\Desktop\\data\\getdata%2Fprojectfiles%2FUCI HAR Dataset.zip')
-}
-
 # Obtain attribute names from features.txt
 features <- read.table("C:\\Users\\vsn\\Desktop\\data\\UCI HAR Dataset/features.txt", sep = " ")
 
