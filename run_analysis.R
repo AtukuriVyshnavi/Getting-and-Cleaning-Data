@@ -1,5 +1,4 @@
-#Getting & Cleaning Data Course Assignment
-#Marc Reitz
+#Getting and Cleaning Data
 
 library(plyr)
 library(dplyr)
@@ -16,7 +15,7 @@ unzip('./Project/getdata%2Fprojectfiles%2FUCI HAR Dataset.zip' , exdir = 'Projec
 features <- read.table("./Project/UCI HAR Dataset/features.txt", sep = " ")
 
 # Read in test and training files
-train_set <- read.table("./Project/UCI HAR Dataset/train/X_train.txt")   #Measurement Files
+train_set <- read.table("./Project/UCI HAR Dataset/train/X_train.txt")
 test_set <- read.table("./Project/UCI HAR Dataset/test/X_test.txt")
 train_label <- read.table("./Project/UCI HAR Dataset/train/y_train.txt")
 test_label <- read.table("./Project/UCI HAR Dataset/test/y_test.txt")
